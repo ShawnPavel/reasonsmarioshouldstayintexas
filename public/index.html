@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body style="background: black; color: white; font-size: 24px; padding: 8px;">
+    <div>
+      <h1>Reasons Mario Should Stay in Texas</h1>
+      <p>We have scoured the earth, and internet, for reasons Mario should stay in Texas instead of moving to Columbus. Below is that exhaustive list in its entirety.</p>
+    </div>
+    <div id="list">
+      <small>Note: it may take a few seconds to load all the entries. Please be patient.</small>
+      <ul>
+        <li><span class="loader"></span></li>
+        <li><span class="loader"></span></li>
+        <li><span class="loader"></span></li>
+        <li><span class="loader"></span></li>
+        <li><span class="loader"></span></li>
+        <li><span class="loader"></span></li>
+        <li><span class="loader"></span></li>
+        <li><span class="loader"></span></li>
+        <li><span class="loader"></span></li>
+        <li><span class="loader"></span></li>
+        <li><span class="loader"></span></li>
+        <li><span class="loader"></span></li>
+      </ul>
+    </div>
+    <div id="failure" style="display: none; font-size: 48px; margin-top: 24px;" class="animate__animated animate__bounce animate__infinite animate__slow">
+      Unable to find any reasons. Believe us, we tried.
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+          document.getElementById("list").style.display = 'none';
+          document.getElementById("failure").style.display = 'inherit';
+        }, 15000);
+      });
+    </script>
+  </body>
+</html>
